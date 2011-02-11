@@ -1,13 +1,13 @@
 <?php
 /**
-* @package LibSprite
+* @package Sprite
 * @copyright (c) 2011 Cullen Walsh
 * @license http://www.opensource.org/licenses/bsd-license.php BSD License
 */
 
 /**
 * MinHeap for SpriteBlocks that sorts by width
-* @package LibSprite
+* @package Sprite
 * @subpackage Util
 */
 class SpriteUtilBlockHeapWidth extends SplHeap {

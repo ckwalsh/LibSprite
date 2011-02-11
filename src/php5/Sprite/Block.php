@@ -1,6 +1,6 @@
 <?php
 /**
-* @package LibSprite
+* @package Sprite
 * @copyright (c) 2011 Cullen Walsh
 * @license http://www.opensource.org/licenses/bsd-license.php BSD License
 */
@@ -8,7 +8,7 @@
 /**
 * Represents a block to be placed in a sprite map, with xy coordinates and a
 * width and height. May contain a SpriteImage offset within it.
-* @package LibSprite
+* @package Sprite
 */
 class SpriteBlock {
 	/**

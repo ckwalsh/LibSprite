@@ -1,6 +1,6 @@
 <?php
 /**
-* @package LibSprite
+* @package Sprite
 * @copyright (c) 2011 Cullen Walsh
 * @license http://www.opensource.org/licenses/bsd-license.php BSD License
 */
@@ -8,7 +8,7 @@
 /**
 * Represents a set of options that should be respected when the associated
 * image is placed in a map
-* @package LibSprite
+* @package Sprite
 */
 class SpriteOptions {
 	/**

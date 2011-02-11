@@ -1,13 +1,13 @@
 <?php
 /**
-* @package LibSprite
+* @package Sprite
 * @copyright (c) 2011 Cullen Walsh
 * @license http://www.opensource.org/licenses/bsd-license.php BSD License
 */
 
 /**
 * Represents an image from a file that may be sprited.
-* @package LibSprite
+* @package Sprite
 * @subpackage Image
 */
 class SpriteImageFile extends SpriteImage {

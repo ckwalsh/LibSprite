@@ -1,6 +1,6 @@
 <?php
 /**
-* @package LibSprite
+* @package Sprite
 * @copyright (c) 2011 Cullen Walsh
 * @license http://www.opensource.org/licenses/bsd-license.php BSD License
 */
@@ -9,7 +9,7 @@
 * Represents an image resource that may be sprited. Subclasses should be used
 * to define images from specific locations. Implementations for file, URL, and
 * String images have been provided.
-* @package LibSprite
+* @package Sprite
 * @subpackage Image
 */
 abstract class SpriteImage {

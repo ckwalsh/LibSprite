@@ -1,6 +1,6 @@
 <?php
 /**
-* @package LibSprite
+* @package Sprite
 * @copyright (c) 2011 Cullen Walsh
 * @license http://www.opensource.org/licenses/bsd-license.php BSD License
 */
@@ -8,7 +8,7 @@
 /**
 * Represents a greedy packing algorithm that keeps track of empty blocks of
 * space and attempts to use them efficiently using a heap.
-* @package LibSprite
+* @package Sprite
 * @subpackage Packer
 */
 class SpritePackerGreedyHeap extends SpritePacker {

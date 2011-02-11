@@ -1,13 +1,13 @@
 <?php
 /**
-* @package LibSprite
+* @package Sprite
 * @copyright (c) 2011 Cullen Walsh
 * @license http://www.opensource.org/licenses/bsd-license.php BSD License
 */
 
 /**
 * Represents a specific packing algorithm
-* @package LibSprite
+* @package Sprite
 * @subpackage Packer
 */
 abstract class SpritePacker {
