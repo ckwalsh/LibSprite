@@ -7,13 +7,13 @@
 
 /**
 * Represents a block to be placed in a sprite map, with xy coordinates and a
-* width and height. May contain a SpriteImage offset within it.
+* width and height. May contain a Sprite_Image offset within it.
 * @package Sprite
 */
-class SpriteBlock {
+class Sprite_Block {
 	/**
 	* Image contained within this block
-	* @var SpriteImage
+	* @var Sprite_Image
 	*/
 	public $image = null;
 	/**

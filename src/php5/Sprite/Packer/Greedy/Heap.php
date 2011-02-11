@@ -11,7 +11,7 @@
 * @package Sprite
 * @subpackage Packer
 */
-class SpritePackerGreedyHeap extends SpritePacker {
+class Sprite_PackerGreedyHeap extends Sprite_Packer {
 	/**
 	* {@inheritdoc}
 	*/
@@ -20,11 +20,11 @@ class SpritePackerGreedyHeap extends SpritePacker {
 		$height = 0;
 
 		$left_blocks = array();
-		$right_blocks = new SpriteUtilBlockHeapHeight();
-		$other_blocks = new SpriteUtilBlockHeapArea();
+		$right_blocks = new Sprite_Util_Block_Heap_Height();
+		$other_blocks = new Sprite_Util_Block_Heap_Area();
 		
-		$right_spaces = new SpriteUtilBlockHeapHeight();
-		$other_spaces = new SpriteUtilBlockHeapArea();
+		$right_spaces = new Sprite_Util_Block_Heap_Height();
+		$other_spaces = new Sprite_Util_Block_Heap_Area();
 
 		foreach ($blocks as $block) {
 			if ($block->width > $width) {
@@ -66,7 +66,7 @@ class SpritePackerGreedyHeap extends SpritePacker {
 			$block->y = $height;
 
 			if ($block->width < $width) {
-				$space = new SpriteBlock();
+				$space = new Sprite_Block();
 				$space->x = $block->width;
 				$space->y = $height;
 				$space->width = $width - $block->width;
@@ -105,7 +105,7 @@ class SpritePackerGreedyHeap extends SpritePacker {
 					
 					if ($tb_delta > $lr_delta) {
 						if ($space->width > $block->width) {
-							$new_space = new SpriteBlock();
+							$new_space = new Sprite_Block();
 							$new_space->x = $space->x;
 							$new_space->y = $space->y;
 							$new_space->width = $space->width - $block->width;
@@ -114,7 +114,7 @@ class SpritePackerGreedyHeap extends SpritePacker {
 						}
 						
 						if ($space->height > $block->width) {
-							$new_space = new SpriteBlock();
+							$new_space = new Sprite_Block();
 							$new_space->x = $space->x;
 							$new_space->y = $space->y + $block->height;
 							$new_space->width = $space->width;
@@ -123,7 +123,7 @@ class SpritePackerGreedyHeap extends SpritePacker {
 						}
 					} else {
 						if ($space->width > $block->width) {
-							$new_space = new SpriteBlock();
+							$new_space = new Sprite_Block();
 							$new_space->x = $space->x;
 							$new_space->y = $space->y;
 							$new_space->width = $space->width - $block->width;
@@ -132,7 +132,7 @@ class SpritePackerGreedyHeap extends SpritePacker {
 						}
 						
 						if ($space->height > $block->width) {
-							$new_space = new SpriteBlock();
+							$new_space = new Sprite_Block();
 							$new_space->x = $block->x;
 							$new_space->y = $space->y + $block->height;
 							$new_space->width = $block->width;
@@ -149,7 +149,7 @@ class SpritePackerGreedyHeap extends SpritePacker {
 				$block->y = $height;
 
 				if ($width != $block->width) {
-					$space = new SpriteBlock();
+					$space = new Sprite_Block();
 					$space->x = 0;
 					$space->y = $height;
 					$space->width = $width - $block->width;
@@ -190,7 +190,7 @@ class SpritePackerGreedyHeap extends SpritePacker {
 					
 					if ($tb_delta > $lr_delta) {
 						if ($space->width > $block->width) {
-							$new_space = new SpriteBlock();
+							$new_space = new Sprite_Block();
 							$new_space->x = $space->x + $block->width;
 							$new_space->y = $space->y;
 							$new_space->width = $space->width - $block->width;
@@ -199,7 +199,7 @@ class SpritePackerGreedyHeap extends SpritePacker {
 						}
 						
 						if ($space->height > $block->width) {
-							$new_space = new SpriteBlock();
+							$new_space = new Sprite_Block();
 							$new_space->x = $space->x;
 							$new_space->y = $space->y + $block->height;
 							$new_space->width = $space->width;
@@ -208,7 +208,7 @@ class SpritePackerGreedyHeap extends SpritePacker {
 						}
 					} else {
 						if ($space->width > $block->width) {
-							$new_space = new SpriteBlock();
+							$new_space = new Sprite_Block();
 							$new_space->x = $space->x;
 							$new_space->y = $space->y + $block->height;
 							$new_space->width = $block->width;
@@ -217,7 +217,7 @@ class SpritePackerGreedyHeap extends SpritePacker {
 						}
 						
 						if ($space->height > $block->width) {
-							$new_space = new SpriteBlock();
+							$new_space = new Sprite_Block();
 							$new_space->x = $space->x + $block->width;
 							$new_space->y = $space->y;
 							$new_space->width = $space->width - $block->width;
@@ -234,7 +234,7 @@ class SpritePackerGreedyHeap extends SpritePacker {
 				$block->y = $height;
 				
 				if ($width != $block->width) {
-					$space = new SpriteBlock();
+					$space = new Sprite_Block();
 					$space->x = $block->width;
 					$space->y = $height;
 					$space->width = $width - $block->width;
@@ -249,11 +249,11 @@ class SpritePackerGreedyHeap extends SpritePacker {
 		return array($width, $height);
 	}
 
-	protected static function fitsIn(SpriteBlock $image, SpriteBlock $space) {
+	protected static function fitsIn(Sprite_Block $image, Sprite_Block $space) {
 		return ($space->height >= $image->height) && ($space->width >= $image->width);
 	}
 
-	protected static function split(SpriteBlock $image, SpriteBlock $space) {
+	protected static function split(Sprite_Block $image, Sprite_Block $space) {
 		return ($space->height >= $image->height) && ($space->width >= $image->width);
 	}
 }

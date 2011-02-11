@@ -6,11 +6,11 @@
 */
 
 /**
-* MinHeap for SpriteBlocks that sorts by area
+* MinHeap for Sprite_Blocks that sorts by area
 * @package Sprite
 * @subpackage Util
 */
-class SpriteUtilBlockHeapArea extends SplHeap {
+class Sprite_Util_Block_Heap_Area extends SplHeap {
 	public function compare($a, $b) {
 		return ($b->area() - $a->area());
 	}

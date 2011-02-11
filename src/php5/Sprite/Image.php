@@ -12,7 +12,7 @@
 * @package Sprite
 * @subpackage Image
 */
-abstract class SpriteImage {
+abstract class Sprite_Image {
 	/**
 	* The GD resource representing this image. May be null if the image hasn't
 	* been loaded yet, or false if there was an error loading the image.

@@ -10,7 +10,7 @@
 * image is placed in a map
 * @package Sprite
 */
-class SpriteOptions {
+class Sprite_Options {
 	/**
 	* Whitespace padding along the top border of the image. Defaults to 0
 	* @var int

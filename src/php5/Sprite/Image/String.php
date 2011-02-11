@@ -10,7 +10,7 @@
 * @package Sprite
 * @subpackage Image
 */
-class SpriteImageString extends SpriteImage {
+class Sprite_Image_String extends Sprite_Image {
 	/**
 	* The string containing image data
 	* @var string
@@ -19,7 +19,7 @@ class SpriteImageString extends SpriteImage {
 	private $string;
 	
 	/**
-	* Creates a new SpriteImageString object
+	* Creates a new Sprite_Image_String object
 	* @param string $data Binary data representing the image
 	*/
 	public function __construct($data) {

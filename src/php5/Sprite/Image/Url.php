@@ -10,7 +10,7 @@
 * @package Sprite
 * @subpackage Image
 */
-class SpriteImageUrl extends SpriteImage {
+class Sprite_Image_Url extends Sprite_Image {
 	/**
 	* The url passed to this object
 	* @var string
@@ -19,7 +19,7 @@ class SpriteImageUrl extends SpriteImage {
 	private $url;
 
 	/**
-	* Creates a new SpriteImageUrl object
+	* Creates a new Sprite_Image_Url object
 	* @param string $url URL of the image on a remote server
 	*/
 	public function __construct($url) {

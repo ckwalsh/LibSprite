@@ -10,7 +10,7 @@
 * @package Sprite
 * @subpackage Image
 */
-class SpriteImageFile extends SpriteImage {
+class Sprite_Image_File extends Sprite_Image {
 	/**
 	* Path to the image file
 	* @var string
@@ -19,7 +19,7 @@ class SpriteImageFile extends SpriteImage {
 	private $path;
 
 	/**
-	* Creates a new SpriteImageFile object
+	* Creates a new Sprite_Image_File object
 	* @param string $path Path (relative or absolute) to the image file.
 	*/
 	public function __construct($path) {

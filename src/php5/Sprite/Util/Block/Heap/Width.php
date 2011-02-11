@@ -6,11 +6,11 @@
 */
 
 /**
-* MinHeap for SpriteBlocks that sorts by width
+* MinHeap for Sprite_Blocks that sorts by width
 * @package Sprite
 * @subpackage Util
 */
-class SpriteUtilBlockHeapWidth extends SplHeap {
+class Sprite_Util_Block_Heap_Width extends SplHeap {
 	public function compare($a, $b) {
 		return ($b->width - $a->width);
 	}
