@@ -10,7 +10,7 @@
 * @package Sprite
 * @subpackage Packer
 */
-class Sprite_PackerStackVertical extends Sprite_Packer {
+class Sprite_Packer_Stack_Vertical implements Sprite_Packer {
 	/**
 	* {@inheritdoc}
 	*/

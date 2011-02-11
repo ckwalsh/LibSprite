@@ -11,7 +11,7 @@
 * @package Sprite
 * @subpackage Packer
 */
-class Sprite_PackerGreedyHeap extends Sprite_Packer {
+class Sprite_Packer_Greedy_Heap implements Sprite_Packer {
 	/**
 	* {@inheritdoc}
 	*/

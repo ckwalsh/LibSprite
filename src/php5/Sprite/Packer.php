@@ -10,7 +10,7 @@
 * @package Sprite
 * @subpackage Packer
 */
-abstract class Sprite_Packer {
+interface Sprite_Packer {
 	/**
 	* Pack the provided blocks into a sprite. Should modify the block objects to
 	* specify their position and whether they are actually being used in the
@@ -19,5 +19,5 @@ abstract class Sprite_Packer {
 	* @param array(Sprite_Block) the blocks this packer should place
 	* @return array the dimensions of the resulting layout
 	*/
-	abstract public function pack($blocks);
+	public function pack($blocks);
 }
