@@ -252,8 +252,4 @@ class Sprite_Packer_Greedy_Heap implements Sprite_Packer {
 	protected static function fitsIn(Sprite_Block $image, Sprite_Block $space) {
 		return ($space->height >= $image->height) && ($space->width >= $image->width);
 	}
-
-	protected static function split(Sprite_Block $image, Sprite_Block $space) {
-		return ($space->height >= $image->height) && ($space->width >= $image->width);
-	}
 }
