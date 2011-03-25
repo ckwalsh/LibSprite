@@ -5,12 +5,14 @@
 * @license http://www.opensource.org/licenses/bsd-license.php BSD License
 */
 
+namespace CKWalsh\LibSprite;
+
 /**
 * Represents a set of options that should be respected when the associated
 * image is placed in a map
 * @package Sprite
 */
-class Sprite_Options {
+class Options {
 	/**
 	* Whitespace padding along the top border of the image. Defaults to 0
 	* @var int

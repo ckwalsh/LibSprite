@@ -5,11 +5,13 @@
 * @license http://www.opensource.org/licenses/bsd-license.php BSD License
 */
 
+namespace CKWalsh\LibSprite;
+
 /**
 * Represents a specific group of images that are sprited together.
 * @package Sprite
 */
-class Sprite_Map {
+class Map {
 	/**
 	* The images in this sprite, indexed by id
 	* @var array
@@ -23,13 +25,13 @@ class Sprite_Map {
 	private $options = array();
 	
 	/**
-	* The Sprite_Packer responsible for placing the images in this sprite
-	* @var Sprite_Packer
+	* The Packer responsible for placing the images in this sprite
+	* @var Packer
 	*/
 	private $packer = null;
 	
 	/**
-	* The Sprite_Blocks in use in this sprite. Each contains an image from the
+	* The Blocks in use in this sprite. Each contains an image from the
 	* $images array and takes into account the padding specified in the options
 	* @var array
 	*/
@@ -56,34 +58,34 @@ class Sprite_Map {
 	private $ready = false;
 
 	/**
-	* Construct a new Sprite_Map object
-	* @param Sprite_Packer $packer The Sprite_Packer object responsible for placing
+	* Construct a new Map object
+	* @param Packer $packer The Packer object responsible for placing
 	* images within this sprite
 	*/
-	public function __construct(Sprite_Packer $packer) {
+	public function __construct(Packer $packer) {
 		$this->setPacker($packer);
 	}
 
 	/**
 	* Sets a new packer to be used for placing images in this sprite
-	* @param Sprite_Packer $packer The new Sprite_Packer object responsible for
+	* @param Packer $packer The new Packer object responsible for
 	* placing images within this sprite
 	*/
-	public function setPacker(Sprite_Packer $packer) {
+	public function setPacker(Packer $packer) {
 		$this->packer = $packer;
 		$this->ready = false;
 	}
 	
 	/**
 	* Add a new image to this sprite
-	* @param Sprite_Image $image The image to add
-	* @param Sprite_Options $options The options for this image, such as padding
+	* @param Image $image The image to add
+	* @param Options $options The options for this image, such as padding
 	* and flush requirements
 	* @param string $id A unique identifier for this image. If not provided, will
 	* be filled with a semirandom 6 character hex string.
 	* @return string the id used for this image
 	*/
-	public function addImage(Sprite_Image $image, Sprite_Options $options = null, $id = false) {
+	public function addImage(Image $image, Options $options = null, $id = false) {
 		if ($id === false) {
 			$id = sprintf("%06x", mt_rand(0, 0xffffff));
 		}
@@ -109,7 +111,7 @@ class Sprite_Map {
 	* Returns an array of the blocks used in this mapping, indexed by id. This may
 	* be used to construct your own CSS and identify which images are really
 	* contained in this sprite.
-	* @return array(Sprite_Block) Blocks in the mapping
+	* @return array(Block) Blocks in the mapping
 	*/
 	public function getBlocks() {
 		if (!$this->ready) {
@@ -123,7 +125,7 @@ class Sprite_Map {
 	* Returns an array of the images added to the map but not placed in the
 	* resulting sprite, indexed by id. This may occur when images cannot be loaded
 	* or conflicting options prevented the image from being placed.
-	* @return array(Sprite_Image) Images not used in the mapping
+	* @return array(Image) Images not used in the mapping
 	*/
 	public function getIgnoredImages() {
 		if (!$this->ready) {
@@ -222,10 +224,10 @@ class Sprite_Map {
 			} else {
 				$options = $this->options[$id];
 				if ($options === null) {
-					$options = new Sprite_Options();
+					$options = new Options();
 				}
 
-				$block = new Sprite_Block();
+				$block = new Block();
 				$block->image = $image;
 				$block->xOffset = $options->paddingLeft;
 				$block->yOffset = $options->paddingTop;

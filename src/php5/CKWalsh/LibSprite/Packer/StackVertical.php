@@ -5,12 +5,14 @@
 * @license http://www.opensource.org/licenses/bsd-license.php BSD License
 */
 
+namespace CKWalsh\LibSprite;
+
 /**
 * Represents a packing algorithm that stacks elements vertically
 * @package Sprite
 * @subpackage Packer
 */
-class Sprite_Packer_Stack_Vertical implements Sprite_Packer {
+class Packer_StackVertical implements Packer {
 	/**
 	* {@inheritdoc}
 	*/

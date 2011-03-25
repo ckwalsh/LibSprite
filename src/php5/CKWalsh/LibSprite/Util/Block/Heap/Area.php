@@ -5,13 +5,15 @@
 * @license http://www.opensource.org/licenses/bsd-license.php BSD License
 */
 
+namespace CKWalsh\LibSprite;
+
 /**
-* MinHeap for Sprite_Blocks that sorts by width
+* MinHeap for Blocks that sorts by area
 * @package Sprite
 * @subpackage Util
 */
-class Sprite_Util_Block_Heap_Width extends SplHeap {
+class Util_Block_Heap_Area extends SplHeap {
 	public function compare($a, $b) {
-		return ($b->width - $a->width);
+		return ($b->area() - $a->area());
 	}
 }

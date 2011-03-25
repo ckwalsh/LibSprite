@@ -5,12 +5,14 @@
 * @license http://www.opensource.org/licenses/bsd-license.php BSD License
 */
 
+namespace CKWalsh\LibSprite;
+
 /**
 * Represents an image from a file that may be sprited.
 * @package Sprite
 * @subpackage Image
 */
-class Sprite_Image_File extends Sprite_Image {
+class Image_File extends Image {
 	/**
 	* Path to the image file
 	* @var string
@@ -19,7 +21,7 @@ class Sprite_Image_File extends Sprite_Image {
 	private $path;
 
 	/**
-	* Creates a new Sprite_Image_File object
+	* Creates a new Image_File object
 	* @param string $path Path (relative or absolute) to the image file.
 	*/
 	public function __construct($path) {

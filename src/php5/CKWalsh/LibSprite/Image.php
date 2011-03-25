@@ -5,6 +5,8 @@
 * @license http://www.opensource.org/licenses/bsd-license.php BSD License
 */
 
+namespace CKWalsh\LibSprite;
+
 /**
 * Represents an image resource that may be sprited. Subclasses should be used
 * to define images from specific locations. Implementations for file, URL, and
@@ -12,7 +14,7 @@
 * @package Sprite
 * @subpackage Image
 */
-abstract class Sprite_Image {
+abstract class Image {
 	/**
 	* The GD resource representing this image. May be null if the image hasn't
 	* been loaded yet, or false if there was an error loading the image.

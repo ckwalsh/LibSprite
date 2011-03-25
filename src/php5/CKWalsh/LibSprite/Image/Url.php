@@ -5,12 +5,14 @@
 * @license http://www.opensource.org/licenses/bsd-license.php BSD License
 */
 
+namespace CKWalsh\LibSprite;
+
 /**
 * Represents a resource located on a remote http server
 * @package Sprite
 * @subpackage Image
 */
-class Sprite_Image_Url extends Sprite_Image {
+class Image_Url extends Image {
 	/**
 	* The url passed to this object
 	* @var string
@@ -19,7 +21,7 @@ class Sprite_Image_Url extends Sprite_Image {
 	private $url;
 
 	/**
-	* Creates a new Sprite_Image_Url object
+	* Creates a new Image_Url object
 	* @param string $url URL of the image on a remote server
 	*/
 	public function __construct($url) {

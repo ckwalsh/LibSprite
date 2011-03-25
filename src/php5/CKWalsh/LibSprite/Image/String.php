@@ -5,12 +5,14 @@
 * @license http://www.opensource.org/licenses/bsd-license.php BSD License
 */
 
+namespace CKWalsh\LibSprite;
+
 /**
 * Represents a resource stored in a binary string
 * @package Sprite
 * @subpackage Image
 */
-class Sprite_Image_String extends Sprite_Image {
+class Image_String extends Image {
 	/**
 	* The string containing image data
 	* @var string
@@ -19,7 +21,7 @@ class Sprite_Image_String extends Sprite_Image {
 	private $string;
 	
 	/**
-	* Creates a new Sprite_Image_String object
+	* Creates a new Image_String object
 	* @param string $data Binary data representing the image
 	*/
 	public function __construct($data) {

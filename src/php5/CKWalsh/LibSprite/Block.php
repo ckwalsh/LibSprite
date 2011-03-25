@@ -5,15 +5,17 @@
 * @license http://www.opensource.org/licenses/bsd-license.php BSD License
 */
 
+namespace CKWalsh\LibSprite;
+
 /**
 * Represents a block to be placed in a sprite map, with xy coordinates and a
-* width and height. May contain a Sprite_Image offset within it.
+* width and height. May contain a Image offset within it.
 * @package Sprite
 */
-class Sprite_Block {
+class Block {
 	/**
 	* Image contained within this block
-	* @var Sprite_Image
+	* @var Image
 	*/
 	public $image = null;
 	/**
