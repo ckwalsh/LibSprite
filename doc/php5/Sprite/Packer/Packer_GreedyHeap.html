@@ -3,13 +3,13 @@
   <html xmlns="http://www.w3.org/1999/xhtml">
 		<head>
 			<!-- template designed by Marco Von Ballmoos -->
-			<title>Docs For Class Sprite_Packer_Stack_Vertical</title>
+			<title>Docs For Class Packer_GreedyHeap</title>
 			<link rel="stylesheet" href="../../media/stylesheet.css" />
 			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
 		</head>
 		<body>
 			<div class="page-body">			
-<h2 class="class-name">Class Sprite_Packer_Stack_Vertical</h2>
+<h2 class="class-name">Class Packer_GreedyHeap</h2>
 
 <a name="sec-description"></a>
 <div class="info-box">
@@ -23,12 +23,12 @@
                 <p class="implements">
             Implements interfaces:
             <ul>
-                <li><a href="../../Sprite/Packer/Sprite_Packer.html">Sprite_Packer</a></li>            </ul>
+                <li><a href="../../Sprite/Packer/Packer.html">Packer</a></li>            </ul>
         </p>
         		<!-- ========== Info from phpDoc block ========= -->
-<p class="short-description">Represents a packing algorithm that stacks elements vertically</p>
+<p class="short-description">Represents a greedy packing algorithm that keeps track of empty blocks of  space and attempts to use them efficiently using a heap.</p>
 		<p class="notes">
-			Located in <a class="field" href="_Packer---Stack---Vertical.php.html">/Packer/Stack/Vertical.php</a> (line <span class="field">13</span>)
+			Located in <a class="field" href="_Packer---GreedyHeap.php.html">/Packer/GreedyHeap.php</a> (line <span class="field">16</span>)
 		</p>
 		
 				
@@ -49,8 +49,13 @@
 		</div>
 		<div class="info-box-body">			
 			<div class="method-summary">
-												
 												<div class="method-definition">
+					static 						<span class="method-result">void</span>
+										<a href="#fitsIn" title="details" class="method-name">fitsIn</a>
+											(<span class="var-type"><a href="../../Sprite/Block.html">Block</a></span>&nbsp;<span class="var-name">$image</span>, <span class="var-type"><a href="../../Sprite/Block.html">Block</a></span>&nbsp;<span class="var-name">$space</span>)
+									</div>
+																
+																				<div class="method-definition">
 											<span class="method-result">void</span>
 										<a href="#pack" title="details" class="method-name">pack</a>
 											(<span class="var-type"></span>&nbsp;<span class="var-name">$blocks</span>)
@@ -70,12 +75,44 @@
 		</div>
 		<div class="info-box-body">
 			<A NAME='method_detail'></A>
+<a name="methodfitsIn" id="fitsIn"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method fitsIn</span> (line <span class="line-number">254</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">void</span>
+		<span class="method-name">
+			fitsIn
+		</span>
+					(<span class="var-type"><a href="../../Sprite/Block.html">Block</a></span>&nbsp;<span class="var-name">$image</span>, <span class="var-type"><a href="../../Sprite/Block.html">Block</a></span>&nbsp;<span class="var-name">$space</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../../Sprite/Block.html">Block</a></span>
+				<span class="var-name">$image</span>			</li>
+					<li>
+				<span class="var-type"><a href="../../Sprite/Block.html">Block</a></span>
+				<span class="var-name">$space</span>			</li>
+				</ul>
+		
+			
+	</div>
 
 <a name="methodpack" id="pack"><!-- --></a>
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">pack</span> (line <span class="line-number">17</span>)
+		<span class="method-title">pack</span> (line <span class="line-number">20</span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -100,7 +137,7 @@
 				<hr class="separator" />
 		<div class="notes">Implementation of:</div>
 			<dl>
-			<dt><a href="../../Sprite/Packer/Sprite_Packer.html#methodpack">Sprite_Packer::pack()</a></dt>
+			<dt><a href="../../Sprite/Packer/Packer.html#methodpack">Packer::pack()</a></dt>
 						<dd>Pack the provided blocks into a sprite. Should modify the block objects to  specify their position and whether they are actually being used in the  resulting layout, but should not interfere with their size and should  respect any flush options on them.</dd>
 					</dl>
 			
@@ -111,7 +148,7 @@
 
 
 	<p class="notes" id="credit">
-		Documentation generated on Mon, 14 Feb 2011 01:55:21 -0800 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+		Documentation generated on Fri, 25 Mar 2011 09:06:57 -0700 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
 	</p>
 	</div></body>
 </html>

@@ -3,13 +3,13 @@
   <html xmlns="http://www.w3.org/1999/xhtml">
 		<head>
 			<!-- template designed by Marco Von Ballmoos -->
-			<title>Docs For Class Sprite_Map</title>
+			<title>Docs For Class Map</title>
 			<link rel="stylesheet" href="../media/stylesheet.css" />
 			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
 		</head>
 		<body>
 			<div class="page-body">			
-<h2 class="class-name">Class Sprite_Map</h2>
+<h2 class="class-name">Class Map</h2>
 
 <a name="sec-description"></a>
 <div class="info-box">
@@ -23,7 +23,7 @@
         		<!-- ========== Info from phpDoc block ========= -->
 <p class="short-description">Represents a specific group of images that are sprited together.</p>
 		<p class="notes">
-			Located in <a class="field" href="_Map.php.html">/Map.php</a> (line <span class="field">12</span>)
+			Located in <a class="field" href="_Map.php.html">/Map.php</a> (line <span class="field">14</span>)
 		</p>
 		
 				
@@ -44,16 +44,16 @@
 		</div>
 		<div class="info-box-body">			
 			<div class="method-summary">
-																																																																												
+																																																																																				
 												<div class="method-definition">
-											<span class="method-result">Sprite_Map</span>
+											<span class="method-result">Map</span>
 										<a href="#__construct" title="details" class="method-name">__construct</a>
-											(<span class="var-type"><a href="../Sprite/Packer/Sprite_Packer.html">Sprite_Packer</a></span>&nbsp;<span class="var-name">$packer</span>)
+											(<span class="var-type"><a href="../Sprite/Packer/Packer.html">Packer</a></span>&nbsp;<span class="var-name">$packer</span>)
 									</div>
 																<div class="method-definition">
 											<span class="method-result">string</span>
 										<a href="#addImage" title="details" class="method-name">addImage</a>
-											(<span class="var-type"><a href="../Sprite/Image/Sprite_Image.html">Sprite_Image</a></span>&nbsp;<span class="var-name">$image</span>, [<span class="var-type"><a href="../Sprite/Sprite_Options.html">Sprite_Options</a></span>&nbsp;<span class="var-name">$options</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$id</span> = <span class="var-default">false</span>])
+											(<span class="var-type"><a href="../Sprite/Image/Image.html">Image</a></span>&nbsp;<span class="var-name">$image</span>, [<span class="var-type"><a href="../Sprite/Options.html">Options</a></span>&nbsp;<span class="var-name">$options</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$id</span> = <span class="var-default">false</span>])
 									</div>
 																<div class="method-definition">
 											<span class="method-result">void</span>
@@ -61,9 +61,14 @@
 										()
 									</div>
 																<div class="method-definition">
-											<span class="method-result">array(Sprite_Block)</span>
+											<span class="method-result">array(Block)</span>
 										<a href="#getBlocks" title="details" class="method-name">getBlocks</a>
 										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getCSS" title="details" class="method-name">getCSS</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$path</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$namespace</span> = <span class="var-default">'spr'</span>])
 									</div>
 																<div class="method-definition">
 											<span class="method-result">array</span>
@@ -71,7 +76,7 @@
 										()
 									</div>
 																<div class="method-definition">
-											<span class="method-result">array(Sprite_Image)</span>
+											<span class="method-result">array(Image)</span>
 										<a href="#getIgnoredImages" title="details" class="method-name">getIgnoredImages</a>
 										()
 									</div>
@@ -88,7 +93,7 @@
 																<div class="method-definition">
 											<span class="method-result">void</span>
 										<a href="#setPacker" title="details" class="method-name">setPacker</a>
-											(<span class="var-type"><a href="../Sprite/Packer/Sprite_Packer.html">Sprite_Packer</a></span>&nbsp;<span class="var-name">$packer</span>)
+											(<span class="var-type"><a href="../Sprite/Packer/Packer.html">Packer</a></span>&nbsp;<span class="var-name">$packer</span>)
 									</div>
 								</div>
 		</div>
@@ -107,39 +112,39 @@
 			<A NAME='method_detail'></A>
 
 <a name="method__construct" id="__construct"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">Constructor __construct</span> (line <span class="line-number">63</span>)
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number">65</span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
-<p class="short-description">Construct a new Sprite_Map object</p>
+<p class="short-description">Construct a new Map object</p>
 	<ul class="tags">
 				<li><span class="field">access:</span> public</li>
 			</ul>
 	
 	<div class="method-signature">
-		<span class="method-result">Sprite_Map</span>
+		<span class="method-result">Map</span>
 		<span class="method-name">
 			__construct
 		</span>
-					(<span class="var-type"><a href="../Sprite/Packer/Sprite_Packer.html">Sprite_Packer</a></span>&nbsp;<span class="var-name">$packer</span>)
+					(<span class="var-type"><a href="../Sprite/Packer/Packer.html">Packer</a></span>&nbsp;<span class="var-name">$packer</span>)
 			</div>
 	
 			<ul class="parameters">
 					<li>
-				<span class="var-type"><a href="../Sprite/Packer/Sprite_Packer.html">Sprite_Packer</a></span>
-				<span class="var-name">$packer</span><span class="var-description">: The Sprite_Packer object responsible for placing  images within this sprite</span>			</li>
+				<span class="var-type"><a href="../Sprite/Packer/Packer.html">Packer</a></span>
+				<span class="var-name">$packer</span><span class="var-description">: The Packer object responsible for placing  images within this sprite</span>			</li>
 				</ul>
 		
 			
 	</div>
 <a name="methodaddImage" id="addImage"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">addImage</span> (line <span class="line-number">86</span>)
+		<span class="method-title">addImage</span> (line <span class="line-number">88</span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -154,15 +159,15 @@
 		<span class="method-name">
 			addImage
 		</span>
-					(<span class="var-type"><a href="../Sprite/Image/Sprite_Image.html">Sprite_Image</a></span>&nbsp;<span class="var-name">$image</span>, [<span class="var-type"><a href="../Sprite/Sprite_Options.html">Sprite_Options</a></span>&nbsp;<span class="var-name">$options</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$id</span> = <span class="var-default">false</span>])
+					(<span class="var-type"><a href="../Sprite/Image/Image.html">Image</a></span>&nbsp;<span class="var-name">$image</span>, [<span class="var-type"><a href="../Sprite/Options.html">Options</a></span>&nbsp;<span class="var-name">$options</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$id</span> = <span class="var-default">false</span>])
 			</div>
 	
 			<ul class="parameters">
 					<li>
-				<span class="var-type"><a href="../Sprite/Image/Sprite_Image.html">Sprite_Image</a></span>
+				<span class="var-type"><a href="../Sprite/Image/Image.html">Image</a></span>
 				<span class="var-name">$image</span><span class="var-description">: The image to add</span>			</li>
 					<li>
-				<span class="var-type"><a href="../Sprite/Sprite_Options.html">Sprite_Options</a></span>
+				<span class="var-type"><a href="../Sprite/Options.html">Options</a></span>
 				<span class="var-name">$options</span><span class="var-description">: The options for this image, such as padding  and flush requirements</span>			</li>
 					<li>
 				<span class="var-type">string</span>
@@ -172,10 +177,10 @@
 			
 	</div>
 <a name="methodgenerate" id="generate"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">generate</span> (line <span class="line-number">182</span>)
+		<span class="method-title">generate</span> (line <span class="line-number">215</span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -196,10 +201,10 @@
 			
 	</div>
 <a name="methodgetBlocks" id="getBlocks"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getBlocks</span> (line <span class="line-number">114</span>)
+		<span class="method-title">getBlocks</span> (line <span class="line-number">116</span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -210,7 +215,7 @@
 			</ul>
 	
 	<div class="method-signature">
-		<span class="method-result">array(Sprite_Block)</span>
+		<span class="method-result">array(Block)</span>
 		<span class="method-name">
 			getBlocks
 		</span>
@@ -220,11 +225,42 @@
 		
 			
 	</div>
+<a name="methodgetCSS" id="getCSS"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getCSS</span> (line <span class="line-number">179</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getCSS
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$path</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$namespace</span> = <span class="var-default">'spr'</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$path</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$namespace</span>			</li>
+				</ul>
+		
+			
+	</div>
 <a name="methodgetDims" id="getDims"><!-- --></a>
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getDims</span> (line <span class="line-number">140</span>)
+		<span class="method-title">getDims</span> (line <span class="line-number">142</span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -249,7 +285,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getIgnoredImages</span> (line <span class="line-number">128</span>)
+		<span class="method-title">getIgnoredImages</span> (line <span class="line-number">130</span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -260,7 +296,7 @@
 			</ul>
 	
 	<div class="method-signature">
-		<span class="method-result">array(Sprite_Image)</span>
+		<span class="method-result">array(Image)</span>
 		<span class="method-name">
 			getIgnoredImages
 		</span>
@@ -274,7 +310,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getImage</span> (line <span class="line-number">154</span>)
+		<span class="method-title">getImage</span> (line <span class="line-number">156</span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -300,7 +336,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">removeImage</span> (line <span class="line-number">102</span>)
+		<span class="method-title">removeImage</span> (line <span class="line-number">104</span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -329,7 +365,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">setPacker</span> (line <span class="line-number">72</span>)
+		<span class="method-title">setPacker</span> (line <span class="line-number">74</span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -343,13 +379,13 @@
 		<span class="method-name">
 			setPacker
 		</span>
-					(<span class="var-type"><a href="../Sprite/Packer/Sprite_Packer.html">Sprite_Packer</a></span>&nbsp;<span class="var-name">$packer</span>)
+					(<span class="var-type"><a href="../Sprite/Packer/Packer.html">Packer</a></span>&nbsp;<span class="var-name">$packer</span>)
 			</div>
 	
 			<ul class="parameters">
 					<li>
-				<span class="var-type"><a href="../Sprite/Packer/Sprite_Packer.html">Sprite_Packer</a></span>
-				<span class="var-name">$packer</span><span class="var-description">: The new Sprite_Packer object responsible for  placing images within this sprite</span>			</li>
+				<span class="var-type"><a href="../Sprite/Packer/Packer.html">Packer</a></span>
+				<span class="var-name">$packer</span><span class="var-description">: The new Packer object responsible for  placing images within this sprite</span>			</li>
 				</ul>
 		
 			
@@ -360,7 +396,7 @@
 
 
 	<p class="notes" id="credit">
-		Documentation generated on Mon, 14 Feb 2011 01:55:20 -0800 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+		Documentation generated on Fri, 25 Mar 2011 09:06:57 -0700 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
 	</p>
 	</div></body>
 </html>
