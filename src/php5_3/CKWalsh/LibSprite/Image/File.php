@@ -1,6 +1,6 @@
 <?php
 /**
-* @package Sprite
+* @package LibSprite
 * @copyright (c) 2011 Cullen Walsh
 * @license http://www.opensource.org/licenses/bsd-license.php BSD License
 */
@@ -9,7 +9,7 @@ namespace CKWalsh\LibSprite;
 
 /**
 * Represents an image from a file that may be sprited.
-* @package Sprite
+* @package LibSprite
 * @subpackage Image
 */
 class Image_File extends Image {
