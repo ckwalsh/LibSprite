@@ -12,7 +12,7 @@ namespace CKWalsh\LibSprite;
 * @package Sprite
 * @subpackage Util
 */
-class Util_Block_Heap_Area extends SplHeap {
+class Util_Block_Heap_Area extends \SplHeap {
 	public function compare($a, $b) {
 		return ($b->area() - $a->area());
 	}
