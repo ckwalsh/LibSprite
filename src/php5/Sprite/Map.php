@@ -174,6 +174,37 @@ class Sprite_Map {
 		return $img;
 	}
 
+	public function getCSS($path, $namespace = 'spr') {
+		if (!$this->ready) {
+			$this->generate();
+		}
+
+		$css = '.' . $namespace . '{background:transparent url(' . $path . ") no-repeat}\n";
+
+		foreach ($this->blocks as $id => $block) {
+			$css .= '.' . $namespace . '.' . $namespace . '_' . $id . '{background-position:';
+			$x = $block->x + $block->xOffset;
+			$y = $block->y + $block->yOffset;
+			
+			if ($x == 0) {
+				$css .= '0 ';
+			} else {
+				$css .= -$x . 'px ';
+			}
+			
+			if ($y == 0) {
+				$css .= '0';
+			} else {
+				$css .= -$y . 'px';
+			}
+
+			$css .= "}\n";
+		}
+
+		return $css;
+		
+	}
+
 	/**
 	* Processes the images and places them in the mapping. This is called
 	* implicitly when methods are used that require the sprite mapping to be
