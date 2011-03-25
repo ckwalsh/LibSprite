@@ -1,0 +1,3 @@
+LibSprite is a cross language css sprite generation library designed to make it easy to programatically add sprites to your application. It can handle image loading, positioning, image generation, and css generation completely automatically.
+
+At the present, LibSprite supports php 5.3. Support is planned for Ruby and C++
